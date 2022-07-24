@@ -212,6 +212,11 @@ def parse_args(args):
             "opt-2.7b",
             "opt-6.7b",
             "opt-13b",
+            "stanford-crfm/arwen-gpt2-medium-x21",
+            "stanford-crfm/beren-gpt2-medium-x49",
+            "stanford-crfm/celebrimbor-gpt2-medium-x81",
+            "stanford-crfm/durin-gpt2-medium-x343",
+            "stanford-crfm/expanse-gpt2-small-x777",
         ],
         required=True,
     )
