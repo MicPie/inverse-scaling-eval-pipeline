@@ -53,6 +53,14 @@ ValidHFModel = Literal[
     "opt-2.7b",
     "opt-6.7b",
     "opt-13b",
+    # Stanford NLP mistral model checkpoints:
+    # https://nlp.stanford.edu/mistral/getting_started/download.html
+    # https://huggingface.co/stanford-crfm
+    "stanford-crfm/arwen-gpt2-medium-x21",
+    "stanford-crfm/beren-gpt2-medium-x49",
+    "stanford-crfm/celebrimbor-gpt2-medium-x81",
+    "stanford-crfm/durin-gpt2-medium-x343",
+    "stanford-crfm/expanse-gpt2-small-x777",
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
