@@ -41,6 +41,12 @@ size_dict = {
     "opt-2.7b": 2_700_000_000,
     "opt-6.7b": 6_700_000_000,
     "opt-13b": 13_000_000_000,
+    # Stanford NLP mistral model checkpoints (NOT model sizes)
+    "stanford-crfm/arwen-gpt2-medium-x21": 21,
+    "stanford-crfm/beren-gpt2-medium-x49": 49,
+    "stanford-crfm/celebrimbor-gpt2-medium-x81": 81,
+    "stanford-crfm/durin-gpt2-medium-x343": 343,
+    "stanford-crfm/expanse-gpt2-small-x777": 777,
 }
 
 
