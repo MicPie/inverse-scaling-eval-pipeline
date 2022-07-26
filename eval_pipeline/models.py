@@ -102,7 +102,7 @@ class HFModel(Model):
             if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
                 prefix = "EleutherAI/"
             elif model_name.startswith("stanford-crfm_"):
-                prefix = "stanford_crfm/"
+                prefix = "stanford-crfm/"
                 model_name = model_name.replace("stanford-crfm_", "")
             else:
                 prefix = ""
