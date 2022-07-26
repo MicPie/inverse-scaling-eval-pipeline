@@ -56,11 +56,11 @@ ValidHFModel = Literal[
     # Stanford NLP mistral model checkpoints:
     # https://nlp.stanford.edu/mistral/getting_started/download.html
     # https://huggingface.co/stanford-crfm
-    "stanford-crfm/arwen-gpt2-medium-x21",
-    "stanford-crfm/beren-gpt2-medium-x49",
-    "stanford-crfm/celebrimbor-gpt2-medium-x81",
-    "stanford-crfm/durin-gpt2-medium-x343",
-    "stanford-crfm/expanse-gpt2-small-x777",
+    "stanford-crfm_arwen-gpt2-medium-x21",
+    "stanford-crfm_beren-gpt2-medium-x49",
+    "stanford-crfm_celebrimbor-gpt2-medium-x81",
+    "stanford-crfm_durin-gpt2-medium-x343",
+    "stanford-crfm_expanse-gpt2-small-x777",
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
@@ -101,6 +101,9 @@ class HFModel(Model):
         else:
             if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
                 prefix = "EleutherAI/"
+            elif model_name.startswith("stanford-crfm_"):
+                prefix = "stanford_crfm/"
+                model_name = model_name.replace("stanford-crfm_", "")
             else:
                 prefix = ""
             torch.cuda.empty_cache()
