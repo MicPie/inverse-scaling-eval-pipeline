@@ -47,7 +47,7 @@ size_dict = {
     #"stanford-crfm_celebrimbor-gpt2-medium-x81": 81,
     #"stanford-crfm_durin-gpt2-medium-x343": 343,
     #"stanford-crfm_expanse-gpt2-small-x777": 777,
-    "arwen-gpt2-medium-x21_000000": 0
+    "arwen-gpt2-medium-x21_000000": 0,
     "arwen-gpt2-medium-x21_100000": 100_000,
     "arwen-gpt2-medium-x21_200000": 200_000,
     "arwen-gpt2-medium-x21_300000": 300_000,
