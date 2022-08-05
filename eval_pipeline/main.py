@@ -222,6 +222,11 @@ def parse_args(args):
             "arwen-gpt2-medium-x21_200000",
             "arwen-gpt2-medium-x21_300000",
             "arwen-gpt2-medium-x21_400000",
+            "alias-gpt2-small-x21_000000",
+            "alias-gpt2-small-x21_100000",
+            "alias-gpt2-small-x21_200000",
+            "alias-gpt2-small-x21_300000",
+            "alias-gpt2-small-x21_400000",
         ],
         required=True,
     )

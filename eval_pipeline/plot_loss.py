@@ -52,6 +52,11 @@ size_dict = {
     "arwen-gpt2-medium-x21_200000": 200_000,
     "arwen-gpt2-medium-x21_300000": 300_000,
     "arwen-gpt2-medium-x21_400000": 400_000,
+    "alias-gpt2-small-x21_000000": 0,
+    "alias-gpt2-small-x21_100000": 100_000,
+    "alias-gpt2-small-x21_200000": 200_000,
+    "alias-gpt2-small-x21_300000": 300_000,
+    "alias-gpt2-small-x21_400000": 400_000,
 }
 
 
