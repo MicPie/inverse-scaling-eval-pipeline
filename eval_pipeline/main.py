@@ -252,7 +252,7 @@ def parse_args(args):
             "celebrimbor-gpt2-medium-x81_200000",
             "celebrimbor-gpt2-medium-x81_300000",
             "celebrimbor-gpt2-medium-x81_400000",
-            "durin-gpt2-medium-x343_000000",
+            "durin-gpt2-medium-x343_000010",
             "durin-gpt2-medium-x343_100000",
             "durin-gpt2-medium-x343_200000",
             "durin-gpt2-medium-x343_300000",

@@ -82,7 +82,7 @@ size_dict = {
     "celebrimbor-gpt2-medium-x81_200000": 200_000,
     "celebrimbor-gpt2-medium-x81_300000": 300_000,
     "celebrimbor-gpt2-medium-x81_400000": 400_000,
-    "durin-gpt2-medium-x343_000000": 0,
+    "durin-gpt2-medium-x343_000010": 10,
     "durin-gpt2-medium-x343_100000": 100_000,
     "durin-gpt2-medium-x343_200000": 200_000,
     "durin-gpt2-medium-x343_300000": 300_000,
