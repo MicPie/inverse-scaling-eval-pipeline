@@ -56,21 +56,26 @@ ValidHFModel = Literal[
     # Stanford NLP mistral model checkpoints:
     # https://nlp.stanford.edu/mistral/getting_started/download.html
     # https://huggingface.co/stanford-crfm
-    # "stanford-crfm_arwen-gpt2-medium-x21",
-    # "stanford-crfm_beren-gpt2-medium-x49",
-    # "stanford-crfm_celebrimbor-gpt2-medium-x81",
-    # "stanford-crfm_durin-gpt2-medium-x343",
-    # "stanford-crfm_expanse-gpt2-small-x777",
-    "arwen-gpt2-medium-x21_000000",
-    "arwen-gpt2-medium-x21_100000",
-    "arwen-gpt2-medium-x21_200000",
-    "arwen-gpt2-medium-x21_300000",
-    "arwen-gpt2-medium-x21_400000",
     "alias-gpt2-small-x21_000000",
     "alias-gpt2-small-x21_100000",
     "alias-gpt2-small-x21_200000",
     "alias-gpt2-small-x21_300000",
     "alias-gpt2-small-x21_400000",
+    "battlestar-gpt2-small-x49_000000",
+    "battlestar-gpt2-small-x49_100000",
+    "battlestar-gpt2-small-x49_200000",
+    "battlestar-gpt2-small-x49_300000",
+    "battlestar-gpt2-small-x49_400000",
+    "caprica-gpt2-small-x81_000000",
+    "caprica-gpt2-small-x81_100000",
+    "caprica-gpt2-small-x81_200000",
+    "caprica-gpt2-small-x81_300000",
+    "caprica-gpt2-small-x81_400000",
+    "arwen-gpt2-medium-x21_000000",
+    "arwen-gpt2-medium-x21_100000",
+    "arwen-gpt2-medium-x21_200000",
+    "arwen-gpt2-medium-x21_300000",
+    "arwen-gpt2-medium-x21_400000",
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
