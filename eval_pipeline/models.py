@@ -1,3 +1,4 @@
+import pdb
 from __future__ import annotations
 from abc import ABC, abstractmethod
 import logging
@@ -195,6 +196,7 @@ class HFModel(Model):
             losses.append(loss)
             labels_correct.append(label_correct)
 
+            pdb.set_trace()
             label_predicted = example.classes[torch.tensor(class_logprobs).argmax(dim=-1).item()]
             labels_predicted.append(label_predicted)
         return {
@@ -494,6 +496,7 @@ class GPT3Model(Model):
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
 
+            pdb.set_trace()
             label_predicted = example.classes[relevant_logprobs.argmax(dim=-1).item()]
             labels_predicted.append(label_predicted)
         return {
