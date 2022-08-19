@@ -96,7 +96,12 @@ class HFModel(Model):
             else:
                 prefix = ""
             torch.cuda.empty_cache()
-            self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name, max_length=1024).to(self.device)  # type: ignore
+            self.model = AutoModelForCausalLM.from_pretrained(
+                    prefix + model_name,
+                    max_length=1024,
+                    device_map="auto",
+                    load_in_8bit=True,
+                    ).to(self.device)  # type: ignore
         # apparently the OPT models need slightly different tokenizers
         # https://huggingface.co/docs/transformers/main/en/model_doc/opt#overview
         if prefix == "opt":
@@ -107,14 +112,17 @@ class HFModel(Model):
             prefix + model_name,
             use_fast=use_fast,
             model_max_length=1023,
+            device_map="auto",
+            load_in_8bit=True,
         )
 
     def _load_opt(self, checkpoint: str, device: Device):
         self.model = AutoModelForCausalLM.from_pretrained(
             checkpoint,
             device_map="auto",
-            torch_dtype=torch.float16,
+            #torch_dtype=torch.float16,
             max_length=1024,
+            load_in_8bit=True,
         )
         return self.model
 
