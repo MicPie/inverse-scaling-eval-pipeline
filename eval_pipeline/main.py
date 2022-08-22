@@ -212,6 +212,8 @@ def parse_args(args):
             "opt-2.7b",
             "opt-6.7b",
             "opt-13b",
+            "opt-30b",
+            "opt-66b",
         ],
         required=True,
     )
