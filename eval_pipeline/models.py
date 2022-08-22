@@ -106,7 +106,7 @@ class HFModel(Model):
                     ).to(self.device)  # type: ignore
         # apparently the OPT models need slightly different tokenizers
         # https://huggingface.co/docs/transformers/main/en/model_doc/opt#overview
-        if prefix == "opt":
+        if model_name.startswith("opt-"):
             use_fast = False
         else:
             use_fast = True
