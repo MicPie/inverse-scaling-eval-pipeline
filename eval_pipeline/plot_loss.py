@@ -307,6 +307,7 @@ def plot_loss(
     plt.legend()
     plt.tight_layout()
     plt.savefig(Path(exp_dir, "loss_plot.svg"), format="svg")
+    plt.savefig(Path(exp_dir, "loss_plot.png"), format="png")
     if show:
         plt.show()
 
